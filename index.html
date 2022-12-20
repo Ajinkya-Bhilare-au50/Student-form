@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    /* input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  } */
+  </style>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="main">
+      <div class="container">
+        <form action="/">
+          <h1>Student Registration Form</h1>
+          <div class="labelinfo">
+            <label class="labelinfo" for="">First Name:</label>
+            <input
+              type="text"
+              placeholder="first name"
+              maxlength="10"
+              pattern="^[a-zA-Z]*$"
+              name="FirstName"
+              class="nfo"
+            /><span> (max 30 char A-Z and a-z)</span>
+          </div>
+          <div class="labelinfo">
+            <label class="labelinfo" for="">LastName:</label>
+            <input class="nfo" type="text" placeholder="last name" name="LastName" />
+            <span> (max 30 char A-Z and a-z)</span>
+          </div>
+          <div><label class="labelinfo" for="">Gender</label>
+
+          <input
+            class="poy"
+            type="radio"
+            name="gender"
+            id=""
+            value="male"
+            
+          />MALE
+          <input
+            class="poy"
+            type="radio"
+            name="gender"
+            id=""
+            value="female"
+           
+          />FEMALE
+          <input
+            class="poy"
+            type="radio"
+            name="gender"
+            id=""
+            value="other"
+          />OTHER
+          </div>
+
+          <div class="labelinfo">
+            <label class="labelinfo" for="">Are you studying?</label>
+            <input class="poy" type="radio" name="study" id="" value="yes" />YES
+            <input class="poy" type="radio" name="study" id="" value="no" />NO
+          </div>
+          <label class="labelinfo" for="">mobile number</label>
+          <input
+            type="text"
+            placeholder="mobile number"
+            maxlength="10"
+            minlength="10"
+            name="mobileNumber"
+            required
+            pattern="^[0-9]*$"
+            class="nfo"
+          />
+          <div class="labelinfo">
+            <label class="labelinfo" for="">Email ID:</label>
+            <input class="nfo" type="email" name="emailid" id="" placeholder="email" />
+          </div>
+
+          <div class="labelinfo">
+            <div><label class="pol" for="">address:</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="address"
+            ></textarea></div>
+          </div>
+          <label class="labelinfo" for="">city:</label>
+          <input class="nfo" type="text" name="city" id="" placeholder="enter city" />
+          <div class="labelinfo">
+            <label class="labelinfo" for="">state:</label>
+            <input class="nfo" type="text" name="city" id="" placeholder="enter state" />
+          </div>
+          <div class="labelinfo">
+            <label class="labelinfo" for="">country:</label>
+            <input class="nfo" type="text" name="city" id="" placeholder="enter state" />
+          </div>
+
+          <div class="labelinfo">
+            <label class="labelinfo" for="">Hobbies:</label>
+            <input
+              class="poy"
+              type="checkbox"
+              name=""
+              id=""
+              value="singing"
+            />SINGING
+            <input
+              class="poy"
+              type="checkbox"
+              name=""
+              id=""
+              value="coding"
+            />CODING
+            <input
+              class="poy"
+              type="checkbox"
+              name=""
+              id=""
+              value="Dancing"
+            />DANCING
+            <input
+              class="poy"
+              type="checkbox"
+              name=""
+              id=""
+              value="Drawing"
+            />DRAWING
+            <input
+              class="poy"
+              type="checkbox"
+              name=""
+              id=""
+              value="others"
+            />OTHERS
+            <div>
+              <input class="nfo" type="text" name="" id="" placeholder="any other hobby" />
+            </div>
+          </div>
+          <div class="labelinfo">Qualification:</div>
+          <table>
+            <tr>
+              <th>SR.No</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Passing year</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>(10 char max)</td>
+              <td>(upto two decimals)</td>
+              <td></td>
+            </tr>
+          </table>
+
+          <div>
+            <button class="buttn" type="submit">Submit</button>
+            <input class="buttn" type="reset" value="reset" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
